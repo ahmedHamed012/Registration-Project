@@ -1,0 +1,21 @@
+﻿@model User
+@{
+    ViewData["Title"] = "Sign in Now";
+}
+<div class="row register-card">
+    <div class="col-12 col-md-6">
+        <div class="row">
+            <img src="~/Images/signin.jpg" class="col-12" />
+        </div>
+    </div>
+    <div class="col-12 col-md-6 reg-form">
+        <span class="reg-head h4 pt-4">Sign in Now !..</span>
+        <form asp-action="login" method="get">
+            <label asp-for="userMail" class="mt-3 mb-0">Email</label>
+            <input asp-for="userMail" type="email" class="form-control" />
+            <label asp-for="userPassword" class="mt-3 mb-0">Password</label>
+            <input asp-for="userPassword" type="password" class="form-control" />
+            <input type="submit" value="login" class="d-block mt-3" />
+        </form>
+    </div>
+</div>

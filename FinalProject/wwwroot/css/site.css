@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+  height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.reg-head {
+    font-family: "Poppins";
+    font-size: 2rem;
+    font-weight: bold;
+}
+form {
+    width:100%;
+}
+form label {
+    font-family:"Poppins";
+}
+form input {
+    border: none;
+    width:70%;
+    height: 40px;
+    font-size: 20px;
+    font-family: "Poppins";
+    padding: 0px 5px;
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+    form input[type="submit"] {
+        background-color: #d268cc;
+        color:white;
+        transition:0.5s ease-in-out;
+        text-transform:uppercase;
+        letter-spacing:1px;
+    }
+    form input[type="submit"]:hover {
+      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      background-color: white;
+      color: #d268cc;
+}
+.reg-form {
+    display:flex;
+    flex-flow:column wrap;
+    justify-content:center;
+    align-items:flex-start;
+}
+input[value="login"] {
+    background-color: #5ae4a7 !important;
+}
+input[value="login"]:hover {
+    color: #5ae4a7 !important;
+    background-color:white !important;
+}
+.secnd-part {
+    display:flex;
+    flex-flow:column wrap;
+    align-items:center;
+    justify-content:center;
+}
